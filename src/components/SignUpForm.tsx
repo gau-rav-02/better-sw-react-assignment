@@ -58,7 +58,7 @@ const SignUpForm: React.FC = () => {
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                                     const password = e.target.value;
                                     validatePassword(password);
-                                    formik.setFieldValue('password', password);  // Ensure formik's state is updated
+                                    formik.setFieldValue('password', password);
                                 }}
                             />
                             <ErrorMessage name="password" component="div" className="error" />
